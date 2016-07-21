@@ -1,0 +1,26 @@
+<ion-view hide-nav-bar="true" class="appBackground">
+    <ion-content class="padding animated fadeIn">
+        <div class="contentForm">
+            <div class="logoImg padding-vertical">
+                <img class="sizeImagen" src="css/img/ionic.png" alt="" />
+            </div>
+            <div class="list padding">
+              <label class="item itemYo item-input item-floating-label">
+                  <span class="input-label icon ion-person-stalker"> Username</span>
+                  <input type="text" placeholder="Username" ng-model="login.username" ng-patern="params.usernameValidation">
+              </label>
+              <label class="item itemYo item-input item-floating-label">
+                  <span class="input-label icon ion-android-lock"> Password</span>
+                  <input type="password" placeholder="Password" ng-model="login.password" ng-patern="params.passwordValidation">
+              </label>
+              <p class="logoImg padding-vertical textLogin">Cannot access your account?</p>
+              <div class="positionButtons">
+                  <button class="button myButtons" ng-click="goTo()">Login</button>
+              </div>
+            </div>
+         </div>
+     </ion-content>
+     <ion-footer-bar class="myFooter animated fadeIn">
+         <p class="textLogin">New here? Create an account</p>
+     </ion-footer-bar>
+</ion-view>
